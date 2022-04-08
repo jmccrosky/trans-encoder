@@ -21,15 +21,15 @@ import os
 import pandas as pd
 import numpy as np
 
-from data import load_data
+from transencoder.src.data import load_data
 
-from sentence_transformers_ext.bi_encoder_eval import (
+from transencoder.src.sentence_transformers_ext.bi_encoder_eval import (
     EmbeddingSimilarityEvaluator, 
     EmbeddingSimilarityEvaluatorEnsemble,
     EmbeddingSimilarityEvaluatorAUC,
     EmbeddingSimilarityEvaluatorAUCEnsemble
 )
-from sentence_transformers_ext.cross_encoder_eval import (
+from transencoder.src.sentence_transformers_ext.cross_encoder_eval import (
     CECorrelationEvaluatorEnsemble, 
     CECorrelationEvaluatorAUC,
     CECorrelationEvaluatorAUCEnsemble
